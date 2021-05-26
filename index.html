@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alura Dev</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/dracula.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components/cabecalho.css">
+  <link rel="stylesheet" href="assets/css/components/codeArea.css">
+  <link rel="stylesheet" href="assets/css/components/dadosProjeto.css">
+  <link rel="stylesheet" href="assets/css/components/sidebar.css">
+</head>
+
+<body>
+  <header class="container">
+    <div class="cabecalho">
+      <img src="assets/img/Logo.svg" alt="Logo Alura Dev" class="cabecalho_logo">
+      <input type="text" class="cabecalho__pesquisa" placeholder="Busque por algo">
+      <div class="cabecalho__login">
+        <img src="assets/img/icons/search.svg" alt="Icone de pesquisa" class="cabecalho__busca">
+        <img src="assets/img/icons/menu.svg" alt="Icone de menu" class="cabecalho__menu">
+        <img src="assets/img/emanuel02.png" alt="Foto usuario" class="cabecalho__avatar">
+        <p class="cabecalho__username">Emanuel</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container principal">
+    <section class="sidebar">
+      <p class="texto--espaçado sidebar__titulo">Menu</p>
+      <ul class="sidebar__lista">
+        <li class="sidebar__item">
+          <a href="index.html" id="sidebar__link--editor" class="sidebar__link">
+            <div class="sidebar__icon--ativo">
+              <img src="assets/img/icons/code.svg" alt="Icone de código" class="sidebar__icon"></img>
+            </div>
+            <p class="sidebar__texto--ativo">Editor de código</p>
+          </a>
+        </li>
+        <li class="sidebar__item">
+          <a href="comunidade.html" id="sidebar__link--comunidade" class="sidebar__link">
+            <div class="sidebar__bgd--icon">
+              <img src="assets/img/icons/comunity.svg" alt="Icone de comunidade" class="sidebar__icon"></img>
+            </div>
+            <p class="sidebar__texto">Comunidade</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="codeArea">
+      <div class="codeArea__back">
+        <div class="codeArea__tela">
+          <div class="codeArea__botoes">
+            <div class="codeArea__botoes--red"></div>
+            <div class="codeArea__botoes--yellow"></div>
+            <div class="codeArea__botoes--green"></div>
+          </div>
+          <div class="codeArea__texto">
+            <code class="preview hljs" araia-label="editor" contenteditable="true"></code>
+          </div>
+        </div>
+      </div>
+      <button class="codeArea__botao">Visualizar com o highlight</button>
+    </section>
+
+    <section class="dadosProjeto">
+      <div class="dadosProjeto__infos">
+        <p class="dadosProjeto__infos--titulo texto--espaçado">seu projeto</p>
+        <input type="text" class="dadosProjeto__infos--nome" placeholder="Nome do seu projeto">
+        <textarea name="" id="" class="dadosProjeto__infos--descricao"
+          placeholder="Descriçao do seu projeto"></textarea>
+      </div>
+      <div class="dadosProjeto__estilos">
+        <p class="dadosProjeto__estilos--titulo texto--espaçado">personalização</p>
+        <div class="dadosProjeto__estilos--selecao">
+          <select name="" id="" class="dadosProjeto__estilos--linguagem">
+            <option value="Javascript">Javascript</option>
+            <option value="HTML">HTML 5</option>
+            <option value="CSS">CSS 3</option>
+          </select>
+          <input type="color" class="dadosProjeto__estilos--cor" value="#6BD1FF">
+        </div>
+      </div>
+      <button class="dadosProjeto__botao">Salvar projeto</button>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>

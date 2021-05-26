@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunidade | Alura Dev</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components/cabecalho.css">
+  <link rel="stylesheet" href="assets/css/components/sidebar.css">
+  <link rel="stylesheet" href="assets/css/components/cards.css">
+</head>
+
+<body>
+  <header class="container">
+    <div class="cabecalho">
+      <img src="assets/img/Logo.svg" alt="Logo Alura Dev" class="cabecalho_logo">
+      <input type="text" class="cabecalho__pesquisa" placeholder="Busque por algo">
+      <div class="cabecalho__login">
+        <img src="assets/img/icons/search.svg" alt="Icone de pesquisa" class="cabecalho__busca">
+        <img src="assets/img/icons/menu.svg" alt="Icone de menu" class="cabecalho__menu">
+        <img src="assets/img/emanuel02.png" alt="Foto usuario" class="cabecalho__avatar">
+        <p class="cabecalho__username">Emanuel</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container comunidade">
+    <section class="sidebar">
+      <p class="texto--espaçado sidebar__titulo">Menu</p>
+      <ul class="sidebar__lista">
+        <li class="sidebar__item">
+          <a href="index.html" id="sidebar__link--editor" class="sidebar__link">
+            <div class="sidebar__bgd--icon">
+              <img src="assets/img/icons/code.svg" alt="Icone de código" class="sidebar__icon"></img>
+            </div>
+            <p class="sidebar__texto">Editor de código</p>
+          </a>
+        </li>
+        <li class="sidebar__item">
+          <a href="comunidade.html" class="sidebar__link sidebar__link--comunidade">
+            <div class="sidebar__icon--ativo">
+              <img src="assets/img/icons/comunity.svg" alt="Icone de comunidade" class="sidebar__icon"></img>
+            </div>
+            <p class="sidebar__texto--ativo">Comunidade</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="cards">
+      <ul class="cards__list">
+        <li class="cards__item">
+          <div class="card">
+            <div class="card__back">
+              <div class="card__tela">
+                <div class="card__botoes">
+                  <div class="card__botoes--red"></div>
+                  <div class="card__botoes--yellow"></div>
+                  <div class="card__botoes--green"></div>
+                </div>
+                <textarea name="" id="" class="card__texto"></textarea>
+              </div>
+            </div>
+            <div class="card__dadosProjeto">
+              <h3 class="card__dadosProjeto--titulo">Título do projeto</h3>
+              <p class="card__dadosProjeto--descricao">Essa é a descrição do projeto</p>
+            </div>
+            <div class="card__infos">
+              <div class="card__metadata">
+                <div class="card__comments">
+                  <img src="assets/img/icons/comentario.svg" alt="Icone comentario" class="card__infos--comments">
+                  <p class="card__infos--coments-qtd">9</p>
+                </div>
+                <div class="card__curtidas">
+                  <img src="assets/img/icons/curtida.svg" alt="Icone de curtidas" class="card__infos--curtidas">
+                  <p class="card__infos--curtidas-qtd">9</p>
+                </div>
+              </div>
+              <div class="card__infos--author">
+                <img src="assets/img/emanuel02.png" alt="Foto Autor do código" class="card__infos--avatar">
+                <p class="card__infos--username">@Emanuel</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="cards__item">
+          <div class="card">
+            <div class="card__back">
+              <div class="card__tela">
+                <div class="card__botoes">
+                  <div class="card__botoes--red"></div>
+                  <div class="card__botoes--yellow"></div>
+                  <div class="card__botoes--green"></div>
+                </div>
+                <textarea name="" id="" class="card__texto"></textarea>
+              </div>
+            </div>
+            <div class="card__dadosProjeto">
+              <h3 class="card__dadosProjeto--titulo">Título do projeto</h3>
+              <p class="card__dadosProjeto--descricao">Essa é a descrição do projeto</p>
+            </div>
+            <div class="card__infos">
+              <div class="card__metadata">
+                <div class="card__comments">
+                  <img src="assets/img/icons/comentario.svg" alt="Icone comentario" class="card__infos--comments">
+                  <p class="card__infos--coments-qtd">9</p>
+                </div>
+                <div class="card__curtidas">
+                  <img src="assets/img/icons/curtida.svg" alt="Icone de curtidas" class="card__infos--curtidas">
+                  <p class="card__infos--curtidas-qtd">9</p>
+                </div>
+              </div>
+              <div class="card__infos--author">
+                <img src="assets/img/emanuel02.png" alt="Foto Autor do código" class="card__infos--avatar">
+                <p class="card__infos--username">@Emanuel</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="cards__item">
+          <div class="card">
+            <div class="card__back">
+              <div class="card__tela">
+                <div class="card__botoes">
+                  <div class="card__botoes--red"></div>
+                  <div class="card__botoes--yellow"></div>
+                  <div class="card__botoes--green"></div>
+                </div>
+                <textarea name="" id="" class="card__texto"></textarea>
+              </div>
+            </div>
+            <div class="card__dadosProjeto">
+              <h3 class="card__dadosProjeto--titulo">Título do projeto</h3>
+              <p class="card__dadosProjeto--descricao">Essa é a descrição do projeto</p>
+            </div>
+            <div class="card__infos">
+              <div class="card__metadata">
+                <div class="card__comments">
+                  <img src="assets/img/icons/comentario.svg" alt="Icone comentario" class="card__infos--comments">
+                  <p class="card__infos--coments-qtd">9</p>
+                </div>
+                <div class="card__curtidas">
+                  <img src="assets/img/icons/curtida.svg" alt="Icone de curtidas" class="card__infos--curtidas">
+                  <p class="card__infos--curtidas-qtd">9</p>
+                </div>
+              </div>
+              <div class="card__infos--author">
+                <img src="assets/img/emanuel02.png" alt="Foto Autor do código" class="card__infos--avatar">
+                <p class="card__infos--username">@Emanuel</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="cards__item">
+          <div class="card">
+            <div class="card__back">
+              <div class="card__tela">
+                <div class="card__botoes">
+                  <div class="card__botoes--red"></div>
+                  <div class="card__botoes--yellow"></div>
+                  <div class="card__botoes--green"></div>
+                </div>
+                <textarea name="" id="" class="card__texto"></textarea>
+              </div>
+            </div>
+            <div class="card__dadosProjeto">
+              <h3 class="card__dadosProjeto--titulo">Título do projeto</h3>
+              <p class="card__dadosProjeto--descricao">Essa é a descrição do projeto</p>
+            </div>
+            <div class="card__infos">
+              <div class="card__metadata">
+                <div class="card__comments">
+                  <img src="assets/img/icons/comentario.svg" alt="Icone comentario" class="card__infos--comments">
+                  <p class="card__infos--coments-qtd">9</p>
+                </div>
+                <div class="card__curtidas">
+                  <img src="assets/img/icons/curtida.svg" alt="Icone de curtidas" class="card__infos--curtidas">
+                  <p class="card__infos--curtidas-qtd">9</p>
+                </div>
+              </div>
+              <div class="card__infos--author">
+                <img src="assets/img/emanuel02.png" alt="Foto Autor do código" class="card__infos--avatar">
+                <p class="card__infos--username">@Emanuel</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>
