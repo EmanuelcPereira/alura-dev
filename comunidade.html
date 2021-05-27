@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="assets/css/components/cabecalho.css">
   <link rel="stylesheet" href="assets/css/components/sidebar.css">
   <link rel="stylesheet" href="assets/css/components/cards.css">
+  <link rel="stylesheet" href="assets/css/components/modal.css">
 </head>
 
 <body>
@@ -20,8 +21,14 @@
       <img src="assets/img/Logo.svg" alt="Logo Alura Dev" class="cabecalho_logo">
       <input type="text" class="cabecalho__pesquisa" placeholder="Busque por algo">
       <div class="cabecalho__login">
-        <img src="assets/img/icons/search.svg" alt="Icone de pesquisa" class="cabecalho__busca">
-        <img src="assets/img/icons/menu.svg" alt="Icone de menu" class="cabecalho__menu">
+        <div class="cabecalho__icone-busca">
+          <img src="assets/img/icons/search.svg" alt="Icone de pesquisa" class="cabecalho__busca">
+        </div>
+        <div class="cabecalho__icone-menu">
+          <button id="cabecalho__menu--botao">
+            <img src="assets/img/icons/menu.svg" alt="Icone de menu" class="cabecalho__menu">
+          </button>
+        </div>
         <img src="assets/img/emanuel02.png" alt="Foto usuario" class="cabecalho__avatar">
         <p class="cabecalho__username">Emanuel</p>
       </div>
@@ -195,6 +202,38 @@
       </ul>
     </section>
   </main>
+
+  <!-- Modal -->
+  <section id="myModal" class="modal">
+    <div class="modal__area">
+      <div class="close__blur">
+        <img src="assets/img/icons/close.svg" alt="Fechar modal" class="close">
+      </div>
+      <section class="modal__content">
+        <a href="index.html" id="sidebar__link--editor" class="sidebar__link modal__link">
+          <div class="sidebar__bgd--icon">
+            <img src="assets/img/icons/code.svg" alt="Icone de código" class="sidebar__icon"></img>
+          </div>
+          <p class="sidebar__texto">Editor de código</p>
+        </a>
+        <a href="comunidade.html" id="sidebar__link--comunidade" class="sidebar__link modal__link">
+          <div class="sidebar__icon--ativo">
+            <img src="assets/img/icons/comunity.svg" alt="Icone de comunidade" class="sidebar__icon"></img>
+          </div>
+          <p class="sidebar__texto--ativo">Comunidade</p>
+        </a>
+        <hr class="modal__line">
+        <div class="modal__login">
+          <img src="assets/img/emanuel02.png" alt="Foto usuario" class="modal__avatar">
+          <p class="modal__username">Emanuel</p>
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- Modal -->
+
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/modal.js"></script>
 </body>
 
 </html>

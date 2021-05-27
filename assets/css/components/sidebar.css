@@ -26,6 +26,10 @@
   transition: .3s;
 }
 
+.sidebar__texto {
+  color: var(--cinza-200);
+}
+
 .sidebar__texto--ativo {
   color: var(--branco-100);
 }

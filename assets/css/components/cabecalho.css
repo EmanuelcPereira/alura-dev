@@ -19,6 +19,31 @@
   display: none;
 }
 
+.cabecalho__login {
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho__busca {
+  padding: 12px;
+  border-radius: 8px;
+  margin-right: .5rem;
+}
+
+.cabecalho__menu {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.cabecalho__menu:hover {
+  background-color: var(--azul-800);
+}
+
+#cabecalho__menu--botao {
+  background: transparent;
+  border: none;
+}
+
 @media screen and (min-width: 768px) {
   .cabecalho__busca {
     display: none;
