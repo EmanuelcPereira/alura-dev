@@ -10,7 +10,6 @@ function mudaLinguagem() {
 }
 
 linguagem.addEventListener("change", () => {
-  console.log('mudou')
   mudaLinguagem();
 });
 
@@ -19,11 +18,10 @@ botao.addEventListener("click", () => {
   hljs.highlightBlock(codigo);
 });
 
-
 //cor de fundo do editor
-const areaColor = document.querySelector('.codeArea__back');
-const selectedColor = document.querySelector('.dadosProjeto__estilos--cor');
+const areaColor = document.querySelector(".codeArea__back");
+const selectedColor = document.querySelector(".dadosProjeto__estilos--cor");
 
 selectedColor.addEventListener("input", () => {
   areaColor.style.backgroundColor = selectedColor.value;
-})
+});

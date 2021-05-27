@@ -6,7 +6,6 @@ const btn = document.querySelector("#cabecalho__menu--botao");
 const span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal
 btn.onclick = () => {
-  console.log('click')
   modal.style.display = "block";
 };
 
