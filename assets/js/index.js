@@ -15,7 +15,7 @@ linguagem.addEventListener("change", () => {
 
 botao.addEventListener("click", () => {
   const codigo = areaDoCodigo.querySelector("code");
-  hljs.highlightBlock(codigo);
+  hljs.highlightElement(codigo);
 });
 
 //cor de fundo do editor
@@ -25,3 +25,34 @@ const selectedColor = document.querySelector(".dadosProjeto__estilos--cor");
 selectedColor.addEventListener("input", () => {
   areaColor.style.backgroundColor = selectedColor.value;
 });
+
+//captura de dados para salvar no localstorage
+const nomeProjeto = document.querySelector(".dadosProjeto__infos--nome");
+const descricaoProjeto = document.querySelector(
+  ".dadosProjeto__infos--descricao"
+);
+const codigoDigitado = document.querySelector("code");
+const btnSalvar = document.querySelector(".dadosProjeto__botao");
+
+function salvaProjeto() {
+  let dadosProjeto = {
+    'id': atribuiId(),
+    'detalhesDoProjeto': {
+      'nome': nomeProjeto.value,
+      'descricao': descricaoProjeto.value,
+      'linguagem': linguagem.value,
+      'codigo': codigoDigitado.innerText,
+      'cor': selectedColor.value,
+    },
+  };
+  localStorage.setItem(dadosProjeto.id, JSON.stringify(dadosProjeto));
+}
+
+btnSalvar.addEventListener("click", () => {
+  salvaProjeto();
+});
+
+function atribuiId() {
+    return localStorage.length
+
+}

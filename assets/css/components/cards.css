@@ -1,9 +1,6 @@
-.cards__item {
-  padding-bottom: 2.187rem;
-}
-
-.cards__list {
-  list-style: none;
+.cards {
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
@@ -13,11 +10,12 @@
   border: none;
   border-radius: 8px;
   transition: .3s;
+  margin-bottom: 2.187rem;
 }
 
 .card__back {
   width: 100%;
-  height: 25.125rem;
+  height: 18rem;
   background-color: var(--azul-500);
   border: none;
   border-radius: 8px;
@@ -64,9 +62,10 @@
   background-color: var(--preto-900);
   border: none;
   width: 100%;
-  height: 18rem;
+  height: 10rem;
   resize: none;
   color: var(--branco-100);
+  
 }
 
 .card__texto::-webkit-scrollbar {
@@ -81,6 +80,10 @@
   background-color: var(--azul-500);    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid var(--azul-500);  /* creates padding around scroll thumb */
+}
+
+.card__preview {
+  flex-wrap: wrap;
 }
 
 .card__dadosProjeto {
@@ -105,7 +108,6 @@
 
 .card:active .card__infos {
   display: flex;
-  
 }
 
 .card__metadata {
@@ -153,25 +155,25 @@
 }
 
 @media screen and (min-width: 768px) {
+  .card__back {
+    height: 32.375rem;
+  }
   .card__infos {
     display: flex;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .cards__list {
-    column-count: 2;
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
   }
-
   .card__back {
     height: 18rem;
   }
-
-  .card__texto {
-    height: 10rem;
-  }
-
   .card__infos {
     display: flex;
+    padding: 0 1.5rem 0 1.5rem;
   }
 }
